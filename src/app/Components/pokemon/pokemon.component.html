@@ -1,0 +1,14 @@
+<!--src/app/components/pokedex-view/Components/pokemon,component.html-->
+<div class="image-container"> 
+    <img [src] = 'solicitarImagen'>
+</div>
+<div class="buttons"> 
+    <button (click)="antePokemon(); generarExperiencia()" class="button">Anterior</button>
+    <button (click)="sigPokemon(); generarExperiencia()" class="button">Siguiente</button>
+</div>
+<div class="experience-container">
+    <p>Experiencia: {{ experiencia }}%</p>
+    <div class="experience-bar">
+      <div class="experience-fill" [style.width.%]="experiencia"></div>
+    </div>
+</div>

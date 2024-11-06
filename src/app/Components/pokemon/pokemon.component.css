@@ -1,0 +1,66 @@
+
+.image-container {
+    display: flex; /* Allow centering */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    overflow: hidden; /* Hide any image overflow */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures image scales down if needed */
+    max-height: 100%; /* Ensures image scales down if needed */
+    object-fit: contain; /* Maintains aspect ratio */
+}
+
+.buttons { /* Apply flexbox to the button container */
+  display: flex;
+  justify-content: space-around; 
+  width: 100%; 
+  margin-top: 20px; /* Add some spacing from the image */
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    width: 45%; /* Adjusted width for better spacing */
+    margin-top: 20px;
+    display: flex; /* Enable flexbox for the button */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+  }
+  
+  .button:hover {
+    background-color: #0069d9;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  }
+
+  .experience-container {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .experience-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .experience-fill {
+    background-color: #4caf50; /* Color de la barra de experiencia */
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    border-radius: 5px 0 0 5px;
+  }

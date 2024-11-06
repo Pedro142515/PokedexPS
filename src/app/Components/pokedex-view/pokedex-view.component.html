@@ -1,0 +1,25 @@
+<header>
+    <span class="white-circle">
+        <span class="blue-circle"></span>
+    </span>
+</header>
+<div class="app-container">
+    <section class="pokedex-view">
+        <div class="container pokemon">
+            <input type="number" placeholder="Ingresa el ID del Pokémon" [(ngModel)]="pokemonID" (input)="updatePokemonImage()" />
+            
+            <app-pokemon [solicitarImagen]="pokemonImagen"
+            (clickPokemon)="handlePokemon($event)"
+            (cambioValores)="generarValoresAleatorios()"
+            ></app-pokemon>
+
+        </div>
+
+        <div class="container grafico">
+            <app-grafico [valoresRandom]="valoresGrafico"></app-grafico>
+
+        </div>
+
+
+    </section>
+</div> 
